@@ -1,0 +1,31 @@
+body,html{
+    height:100%;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+}
+#area-body{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#left-body{
+    width: 550px;
+    float: left;
+}
+#mid-body{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 300px;
+}
+#right-body{
+    width: 550px;
+    float: left;
+}
+.area-label{
+    font-size: 18px;
+    align-content: center;
+    margin-left:240px;
+    width: 550px;
+}

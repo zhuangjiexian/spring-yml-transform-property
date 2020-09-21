@@ -1,0 +1,7 @@
+server:
+  port: 9898
+spring:
+  application:
+    name: spring-yml-transform-property
+  mvc:
+    static-path-pattern: /**

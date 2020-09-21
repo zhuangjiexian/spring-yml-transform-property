@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>YML-PROPERTY</title>
+    <script type="text/javascript" src="/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/iview/styles/iview.css"/>
+    <script type="text/javascript" src="/vue/vue.min.js"></script>
+    <script type="text/javascript" src="/iview/js/iview.min.js"></script>
+    <script type="text/javascript" src="/jquery/jquery.history.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/transform.css"/>
+</head>
+
+<body>
+<div id="rapp">
+<!--    <i-table border :columns="columns1" :data="data1"></i-table>-->
+    <div id="area-body">
+        <div id="left-body">
+            <div class="area-label">
+               YAML
+            </div>
+            <i-input type="textarea" :rows="30" placeholder="请输入..." v-model="yamlString"></i-input>
+        </div>
+        <div id="mid-body">
+            <i-button type="primary" @click="transformToProperty">&gt;&gt;</i-button><br/>
+            <i-button type="primary" @click="transformToYML" style="margin-top:5px">&lt;&lt;</i-button>
+        </div>
+        <div id="right-body">
+            <div class="area-label">
+                PROPERTY
+            </div>
+            <i-input type="textarea" :rows="30" placeholder="请输入..." v-model="propertyString"></i-input>
+        </div>
+    </div>
+
+    <script src="/js/transform.js"></script>
+</div>
+</body>
+</html>

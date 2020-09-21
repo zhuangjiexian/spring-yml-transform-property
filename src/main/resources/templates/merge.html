@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>YML-PROPERTY</title>
+    <script type="text/javascript" src="/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/iview/styles/iview.css"/>
+    <script type="text/javascript" src="/vue/vue.min.js"></script>
+    <script type="text/javascript" src="/iview/js/iview.min.js"></script>
+    <script type="text/javascript" src="/jquery/jquery.history.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/merge.css"/>
+</head>
+
+<body>
+<div id="rapp">
+    <div id="area-body">
+        <div id="left-body">
+            <i-input type="textarea" :rows="15" v-model="ymlTop" placeholder="请输入..."></i-input><br/>
+            <i-input type="textarea" :rows="15" v-model="ymlBottom" placeholder="请输入..."  style="margin-top:11px"></i-input>
+        </div>
+        <div id="mid-body">
+            <i-button type="primary" @click="mergeYML">&gt;&gt;</i-button>
+        </div>
+        <div id="right-body">
+            <i-input type="textarea" :rows="31" v-model="ymlMerge" placeholder="请输入..."></i-input>
+        </div>
+    </div>
+
+    <script src="/js/merge.js"></script>
+</div>
+</body>
+</html>
